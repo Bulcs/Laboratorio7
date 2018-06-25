@@ -1,0 +1,115 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+
+
+criaçao de um programa para imprimir o número seguinte mais próximo da média  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_teste}{Teste}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Input\+Interator $>$ }\\Input\+Interator \mbox{\hyperlink{main_8cpp_a00116e0112e9f5cdb65824611aed1989}{closest2mean}} (Input\+Interator first, Input\+Interator last)
+\begin{DoxyCompactList}\small\item\em Template Input\+Iterator closest2mean criando um Input\+Iterator first e Input\+Iterator last. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+criaçao de um programa para imprimir o número seguinte mais próximo da média 
+
+\begin{DoxyAuthor}{Author}
+Vinícius Ribeiro Bulcão 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+27/05/2018 
+\end{DoxySince}
+\begin{DoxyDate}{Date}
+28/05/2018 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a00116e0112e9f5cdb65824611aed1989}\label{main_8cpp_a00116e0112e9f5cdb65824611aed1989}} 
+\index{main.\+cpp@{main.\+cpp}!closest2mean@{closest2mean}}
+\index{closest2mean@{closest2mean}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{closest2mean()}{closest2mean()}}
+{\footnotesize\ttfamily template$<$typename Input\+Interator $>$ \\
+Input\+Interator closest2mean (\begin{DoxyParamCaption}\item[{Input\+Interator}]{first,  }\item[{Input\+Interator}]{last }\end{DoxyParamCaption})}
+
+
+
+Template Input\+Iterator closest2mean criando um Input\+Iterator first e Input\+Iterator last. 
+
+parâmetro float ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ 
+\begin{DoxyParams}{Parameters}
+{\em media} & que representa a média dos valores inseridos no vetor v ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ criação do vetor com o iterator i apontando pros parâmetros inteiros ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ criação de um laço indo de i=first ao i!=last, sempre acrescentando 1 em i ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ soma do numero contido naquela memória apontada por i a média ~\newline
+~\newline
+~\newline
+~\newline
+ dividindo o parâmetro média por 6 ~\newline
+~\newline
+~\newline
+ criação de uma precisão de um número após a vírgula no float ~\newline
+~\newline
+ criação de um laço indo de i=first ao i!=last, sempre acrescentando 1 em i ~\newline
+ criação de uma condicional para a atribuição \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+criação de dois parâmetros int 
+\begin{DoxyParams}{Parameters}
+{\em i} & criado para ajudar no laço para implementação do num \\
+\hline
+{\em aux} & criado a atribuição do número do vetor\\
+\hline
+\end{DoxyParams}
+criação de um vetor v com os parâmetros do vetor do tipo inteiro
+
+criação de um laço
+
+enquanto não for digitado o número \textquotesingle{}666\textquotesingle{} o programa continua alocando os números digitados
+
+criação do condicional
+
+caso a quantidade de números digitados for maior que 6, dê erro
+
+chamada do template closest2mean, no qual recebe os parâmetros v.\+begin() e v.\+end()
